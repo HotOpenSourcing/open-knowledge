@@ -20,7 +20,6 @@ packages/app/test-results/
 playwright-report/
 playwright-report-json/
 blob-report/
-.vscode/
 .mcp.json
 .cursor/mcp.json
 .claude/
@@ -30,6 +29,5 @@ blob-report/
 /test-doc.md
 
 # Env files (keep .env.example committed)
-.env
-.env.local
 .env.*.local
+config.bat
