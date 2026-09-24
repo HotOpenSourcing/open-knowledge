@@ -25,8 +25,8 @@
     "*.node"
   ],
   "scripts": {
-    "build": "node scripts/build.mjs --release",
-    "build:debug": "node scripts/build.mjs",
+    "build": "node init && node scripts/build.mjs --release",
+    "build:debug": "node init && node scripts/build.mjs",
     "test": "cargo test && node --test scripts/build.test.mjs"
   },
   "devDependencies": {

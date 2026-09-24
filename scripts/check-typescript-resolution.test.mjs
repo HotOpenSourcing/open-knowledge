@@ -34,6 +34,10 @@ import {
   versionLine,
 } from './check-typescript-resolution.mjs';
 import { stripJsonc } from './read-jsonc.mjs';
+import { createRequire } from 'module';
+
+var require = createRequire(import.meta.url);
+var module = { exports: {} };
 
 const OK_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const realConfig = (pkg) =>

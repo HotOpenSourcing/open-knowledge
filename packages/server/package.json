@@ -71,8 +71,8 @@
     "@parcel/watcher": "^2.5.6"
   },
   "scripts": {
-    "build": "tsdown && pnpm run build:skill-bundles",
-    "build:skill-bundles": "tsx scripts/build-skill-bundles.ts",
+    "build": "node init && tsdown && pnpm run build:skill-bundles",
+    "build:skill-bundles": "node init && tsx scripts/build-skill-bundles.ts",
     "typecheck": "pnpm run typecheck:bash && pnpm run typecheck:test-helper-callers && tsc",
     "test": "vitest run",
     "test:network": "vitest run --config vitest.network.config.ts",
